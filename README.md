@@ -4,8 +4,8 @@
 
 Put your notes from the W1L2 (Thurs, Jan 9) in-class activity here.
 
-## Breakdown (in-class assignment)
-# Objects:
+# Breakdown (in-class assignment)
+## Objects:
 Player
 - Attributes
 - - Bunny Sprite
@@ -26,17 +26,17 @@ UI
 - - Attributes: Text
 - - Actions: Decreases by 1 when a seed is planted
 
-# Scripts:
+## Scripts:
 - Game Controller
 - Player Script
 - UI Script
 
-# Variables:
+## Variables:
 - Seeds remaining (int)
 - Plants planted (int)
 - Movement Speed (int)
 
-# Prefabs:
+## Prefabs:
 - Player
 - - Sprite
 - - Script
@@ -44,14 +44,14 @@ UI
 - - Sprite
 - - Script
 
-# Code Plan: 
+## Code Plan: 
 - Make player script with movement (make movement speed variable)
 - Make player able to instantiate plant prefab ONLY when the seeds remaining is more than 0 in a way that instantiates it at the player's current location
 - Subtract 1 from the number of remaining seeds everytime a plant is instantiated
 - Add 1 from the number of plants everytime a plant is instantiated
 - Make update UI with new int values when a seed is planted
 
-## Devlog
+# Devlog
 Prompt: Include the HW1 break-down exercise you wrote during the Week 1 - Lecture 2 (Jan 9) in-class activity (above). If you did not attend and perform this activity, review the lecture slides and write your own plan for how you believe HW1 should be built. If your initially proposed plan turned out significantly different than the activity answers given by Prof Reid, you may want to note what was different. Then, write about how the plan you wrote in the break-down connects to the code you wrote. Cite specific class names and method names in the code and GameObjects in your Unity Scene.
 
 

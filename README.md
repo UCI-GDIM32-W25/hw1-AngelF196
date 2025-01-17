@@ -1,50 +1,46 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/MjLLqDcN)
 # HW1
 ## W1L2 In-Class Activity
-
-Put your notes from the W1L2 (Thurs, Jan 9) in-class activity here.
-
-# Breakdown (in-class assignment)
-## Objects:
+### Objects:
 Player
 - Attributes
-- - Bunny Sprite
+  - Bunny Sprite
 - Movement
-- - Input - wasd
-- - Output - player movement
+  - Input - wasd
+  - Output - player movement
 - Planting seeds:
-- - Input - space
-- - Output - If the player has at least one seed: 1 seed is planted at the playerís location, seed count decreases, increases plant count
+  - Input - space
+  - Output - If the player has at least one seed: 1 seed is planted at the player‚Äôs location, seed count decreases, increases plant count
 Plant
 - Attributes
-- - Plant Sprite
+  - Plant Sprite
 UI
 - Seeds remaining
-- - Attributes: Text
-- - Actions: Increases by 1 when a seed is planted
+  - Attributes: Text
+  - Actions: Increases by 1 when a seed is planted
 - Seeds planted
-- - Attributes: Text
-- - Actions: Decreases by 1 when a seed is planted
+  - Attributes: Text
+  - Actions: Decreases by 1 when a seed is planted
 
-## Scripts:
+### Scripts:
 - Game Controller
 - Player Script
 - UI Script
 
-## Variables:
+### Variables:
 - Seeds remaining (int)
 - Plants planted (int)
 - Movement Speed (int)
 
-## Prefabs:
+### Prefabs:
 - Player
-- - Sprite
-- - Script
+  - Sprite
+  - Script
 - Plant
-- - Sprite
-- - Script
+  - Sprite
+  - Script
 
-## Code Plan: 
+### Code Plan: 
 - Make player script with movement (make movement speed variable)
 - Make player able to instantiate plant prefab ONLY when the seeds remaining is more than 0 in a way that instantiates it at the player's current location
 - Subtract 1 from the number of remaining seeds everytime a plant is instantiated
@@ -52,14 +48,13 @@ UI
 - Make update UI with new int values when a seed is planted
 
 # Devlog
-Prompt: Include the HW1 break-down exercise you wrote during the Week 1 - Lecture 2 (Jan 9) in-class activity (above). If you did not attend and perform this activity, review the lecture slides and write your own plan for how you believe HW1 should be built. If your initially proposed plan turned out significantly different than the activity answers given by Prof Reid, you may want to note what was different. Then, write about how the plan you wrote in the break-down connects to the code you wrote. Cite specific class names and method names in the code and GameObjects in your Unity Scene.
-
-
-Write your Devlog here!
-
-The code I wrote for the project followed the code breakdown exactly. I started with writing the movement code using ìInput.GetKeyî so that holding down the keys would continue to move the character in the specified direction. I also included an ìifî statement that checks if there are more than 0 seeds after the player presses space to plant a seed. If the player has more than 0 seeds, the ìPlantSeed()î function is run. In this function, the integers ì_numSeedsî and ì_numSeedsPlantedî get one subtracted and one added respectively. The ìInstantiateî function is also used, specifying the plant prefab, the playerís position, and rotation. Finally, the UIís ìUpdateSeedsî function is called, with the updated integers. The UI script updates the attached text from the engine with the integers included in the function parameters. The planning stage perfectly outlined the steps I needed to follow and there was little issue implementing the required features.
-
+The code I wrote for the project followed the code breakdown exactly. I started with writing the movement code using ‚ÄúInput.GetKey‚Äù so that holding down the keys would continue to move the character in the specified direction. I also included an ‚Äúif‚Äù statement that checks if there are more than 0 seeds after the player presses space to plant a seed. If the player has more than 0 seeds, the ‚ÄúPlantSeed()‚Äù function is run. In this function, the integers ‚Äú_numSeeds‚Äù and ‚Äú_numSeedsPlanted‚Äù get one subtracted and one added respectively. The ‚ÄúInstantiate‚Äù function is also used, specifying the plant prefab, the player‚Äôs position, and rotation. Finally, the UI‚Äôs ‚ÄúUpdateSeeds‚Äù function is called, with the updated integers. The UI script updates the attached text from the engine with the integers included in the function parameters. The planning stage perfectly outlined the steps I needed to follow and there was little issue implementing the required features.
 
 ## Open-Source Assets
 If you added any other outside assets, list them here!
 - [Sprout Lands sprite asset pack](https://cupnooble.itch.io/sprout-lands-asset-pack) - character and item sprites
+
+## Prof comments
+I gave you full credit for this Devlog because your break-down bullet points made it clear how it connected to the code, but I would have liked to hear that discussed more in full sentences in the Devlog itself. Otherwise, good job connecting the code to the break-down. :)
+
+I fixed up your bullet listed and header formatting a bit. You can also remove the prompts when you're done writing. This all makes it easier for me to read your Devlog. See the [README formatting guide here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for more hints on formatting.
